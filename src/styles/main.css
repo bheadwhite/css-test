@@ -1,0 +1,78 @@
+* {
+  list-style-type: none;
+  text-decoration: none; }
+
+a, video.vsc-initialized {
+  cursor: pointer; }
+
+a:visited {
+  color: black; }
+
+html {
+  background: lightblue; }
+
+.App {
+  min-height: 1000vh; }
+
+.backImage {
+  /* 23F 25C-3*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-image: url("./../coolbackground.png");
+  background-repeat: no-repeat;
+  background-position: 0 -123px;
+  height: 200px; }
+  .backImage p {
+    /* 23D-1 23D-2 23D-3 23E 25C-2 30E*/
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 46px;
+    top: 177px;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    background-color: green;
+    font-family: Helvetica;
+    text-shadow: 0 0 6px purple; }
+    .backImage p span {
+      color: purple; }
+
+.videoDiv:first-of-type {
+  margin-top: 430px; }
+
+.videoDiv {
+  /* 24C 24E 24F 25D 25F 27C 27D 27E 27F 27G 30C 30D */
+  position: relative;
+  margin-bottom: 40px;
+  bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(yellow, green);
+  box-sizing: border-box;
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  float: none;
+  box-shadow: 0 0 15px blue; }
+
+.backgroundImages {
+  z-index: -1;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 0;
+  top: 500px; }
+
+@media screen and (min-width: 800px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw; }
+  .videoDiv {
+    max-width: 550px; } }
